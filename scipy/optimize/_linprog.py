@@ -167,9 +167,7 @@ def linprog_terse_callback(res):
     print(x)
 
 
-def linprog(c, A_ub=None, b_ub=None, A_eq=None, b_eq=None,
-            bounds=(0, None), method='highs', callback=None,
-            options=None, x0=None, integrality=None):
+def linprog(c, A_ub=None, b_ub=None, A_eq=None, b_eq=None, bounds=(0, None), method='highs', callback=None, options=None, x0=None, integrality=None):
     r"""
     Linear programming: minimize a linear objective function subject to linear
     equality and inequality constraints.
@@ -712,3 +710,4 @@ def linprog(c, A_ub=None, b_ub=None, A_eq=None, b_eq=None,
         'success': status == 0}
 
     return OptimizeResult(sol)
+
